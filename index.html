@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/a7b822cf68.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body class="bg-light">
+<main class="d-flex align-items-center justify-content-center min-vh-100">
+  <section class="card shadow border-0" style="max-width: 600px; border-radius: 20px;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img srcset="images/image-product-desktop.jpg 600w, images/image-product-mobile.jpg 686w"
+             sizes="(max-width: 600px) 686px, 300px"
+             src="images/image-product-desktop.jpg"
+             class="img-fluid rounded-start"
+             alt="A bottle of perfume surrounded by foliage">
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-between">
+        <div class="card-body">
+          <span class="text-uppercase text-muted" style="letter-spacing: 2px;">Perfume</span>
+          <h1 class="card-title fw-bold fs-2">Gabrielle Essence Eau De Parfum</h1>
+          <p class="card-text">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+          <div class="d-flex align-items-center my-4">
+            <span class="fw-bold text-success fs-3 me-3">$149.99</span>
+            <span class="text-muted text-decoration-line-through">$169.99</span>
+          </div> 
+        </div>
+        <div class="card-footer bg-white border-0 pb-4 px-4">
+          <button class="btn btn-success btn-lg w-100"><i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
